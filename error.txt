@@ -1,0 +1,24 @@
+Errors in python
+Syntax error when it is not in the format.
+Name error when it is not defined
+Index error when the list element  is out of range.
+Value error when we try to caste one value into another which is not possible for example file name can not be converted into the number so it is a value error.
+Learn output formating on sreing and floatinh poit number.
+Why in python we don't have increment and decrement.
+Type error range expected atleat 3 arguments but they have given 4 arguments 
+Zero division error occurs when the number can not be divided
+map is used to access every element one by one in a list 
+expansion : an instruction where it can not be exicuted in an expansion
+
+
+
+
+Assignments:
+__main and __learn
+What Pythonic or pyp3
+What is pythonic (range functions python)
+Can we modify the list in a tuple 
+Wants to pass a command line arguments into my_range()
+Why and What argv stores the file name [0] and what is its purpose
+Why in python there is no implicit type casting example abb+55 is a type error we can concatenate only string to a string not to an integer
+
