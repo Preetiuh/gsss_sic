@@ -27,4 +27,4 @@ sunflower_sales = acres * 0.7 * 1000 * 200
 sugarcane_sales = acres * 45 * 4000  # price per tonne
 
 total = tomato_sales + potato_sales + cabbage_sales + sunflower_sales + sugarcane_sales
-print("Total sales: Rs.", int(total))
+print("Total sales: Rs.", int(total)) 
