@@ -1,0 +1,320 @@
+SIC NOTES
+------------
+
+
+ARITHMETIC OPERATORS:
++ - * // / % **
+
+All operators are binary operators. They need 2 operands/values/input
+The rule/syntax says we must place the operator in between the operands which is INFIX notation.
+The I/P are numbers.
+The O/P is number.
+The operators + and - have the least precedence (heirarchy/preference)
+All the Arithmetic operators except the power operator have Left to Right Associtivity.
+x + y + z
+4 + 5 - 19
+Here, the expression 4 + 5 is evaluated 1st
+2 ** 3 ** 2
+Here 3 ** 2 is evaluated 1st.
+NOTE:
+The way +ve integers are stored in memory, the way -ve integers are stored in memory and the floating point numbers (number with precission) are all different.
+
+num = 67
+Here 67 is just converted to binary sna stored. Also note that the number 67 here is Decimal number.
+num = 0o67
+Here the number is Octal
+num = 0b101010
+Here the number is binary
+num = 0x99
+num = 0X99
+num = 0X7F
+Here all the 3 examples are of Hexa-Decimal numbers
+f   hexa-decimal
+17  octal
+15  decimal
+1111 binary
+ff = 15 * 16(1) + 15 * 16(0) = 240 + 15 = 255
+11111111
+ffff = 65535
+In a particular case, 11111111 is not 255. When is it ?
+So in signed byte, the max value and minimum values (respectively) are:"
+01111111 = 127
+10000000 = -128
+
+num = -23
+-23
+23
+00010111
+11101000
+11101001
+-1 * 2(7) + 1 * 2(6) + 1 * 2(5) + 9
+-128 + 64 + 32 + 9
+-64 + 41
+= -23
+
+floating point numbers are stored using IEEE standards.
+
+5 + 6
+0101
+0110
+1011
+
+5 + 6.055
+5.0 + 6.055
+
+4 - 5 % 7
+4 + 8 + 9
+Here the expressions are read from L -> R
+But they are evaluated only after converting user given infix notation expression into postfix expression.
+
+RELATIONAL OPERATORS:
+> < >= <= != ==
+
+All are binary.
+I/P are numbers
+O/P is boolean
+Used wih infix notation.
+Have higher precedence than logical operators but lesser than Arithmetic.
+
+for i from 1 to N do
+for i = 1; i <= N; i++:
+for i = 1; i < N+1; i++:
+
+for i = 1; i <= 20; i++
+for i = 1;  i < 21; i++
+
+[10, 20] Closed Interval
+i >= 10 and i <= 20
+[10, 20)
+i >= 10 and i < 20
+(20, 50)
+---------------------------------------------------
+LOGICAL OPERATORS:
+& && | || ! (C/C++/Java/C# etc)
+
+and or not !  (Python)
+
+I/P are boolean
+O/P is boolean
+
+a = b
+variable = value
+-----------------------------------
+Important points while implementing a solution:
+1. Time efficiency
+2. Space efficiency
+3. Simplicity/Readability
+4. Maintainability
+-------------------------------------------
+HOW TO SOLVE A PROBLEM:
+
+1. Read the problem statement carefully. List down the I/P data, relavant information. Isolate the unwanted information. Assertain what is the O/P.
+Outcome: I/P we know, O/P we know
+
+2. Find the solution. Forget programming. Find the solution using any specific technique or using some formula or trial and error method.
+Outcome: We know the solution
+
+3. Write the Algorithm. Step by step procedure. Each step must be simple, unambigious and finite.
+
+4. Write the Fake-code (Pseucode)
+
+5. Code it!
+
+6. Unit testing, Cyxclomatic complexity (to find number of paths in the logic), optimize the logic.
+
+i/p: non negative number. 
+math.sqrt we need to use
+o/p: print PS or Not
+
+45      6.8     6   36
+144     12.0    12  144
+
+Read a non-ve number, say N
+find root of N, say ROOT
+convert ROOT to integer
+check if ROOT * ROOT is N
+if yes, print N is Perfect Square
+else, print N is not a P S
+
+N = input()
+ROOT = square_root(N)
+ROOT = integer(ROOT)
+if ROOT * ROOT is equal to N, then
+    print N is a P S
+else
+    print N is not a P S
+    
+
+
+
+Input():Functions from the core python library which gives the input altrnally as a string which gives the output for the required input
+List: it is a collections of items where items refer to the data where all the items are stored in the contigious memory location. That is if you any 2 consecutive elements, then there is no gap in between them.
+Lists in python need not to be of the same types as in the case of C/C++/Java etc.
+
+
+print(my_function(None, 20))
+print(my_function(None, None))
+print(my_function(20, None))
+my_function(10, 20)
+my_function(10)
+my_function()
+my_function(num1 = 25)
+my_function(None, 20)
+my_function(num2 = 25)
+my_function(num2 = 25, num1 = 99)
+my_function(num1 = 25, num2 = 99)
+
+--------------------------------------------------------------------
+What is a DS?
+int numbers[10]; // DS
+int num1, num2, num3, num4, num5; // May or may not be a DS
+
+The lookup (accessing any element in the array/list) is one unit time.
+Thus the efficiency of accessing an element in the array is O(1)
+Usually size of an array is fixed. Because of which there are almost always chances of either wastage of memory or shortage of memory.
+Thus, an array is time efficient DS but memory inefficienct DS.
+
+Assume size value is given by user at runtime
+float *numbers = new float[size];
+float[] numbers = new float[size];
+
+float numbers[20];
+
+Good example of list/array:
+To store names of girls of SIC training.
+To store distances of the places to be visited in the order of places of the trip.
+Not good examples of Array/List:
+To store all the UPI transactions of a specific date in the entire country.
+
+---------------------------------------------------------------------------------------
+list is a class in python.
+We create object(s) out of a class
+When we say:
+n = 10
+Here n is just a number. Its value 10 has not units like cm, mts or mt/sec or Hz or mts/sec square
+Now say, we have a course which has a minimum duration and a maximum duration.
+engg_course_duration = 4
+units = 'years'
+minimum_duration = 4
+maximum_duration = 8
+
+class EngineeringCourseDuration:
+    duration
+    unit
+    minimum_duration
+    maximum_duration
+    maximum_per_semester
+
+    initialize_values()
+    set_duration()
+    get_duration()
+    set_unit()
+    get_unit()
+    set_maximum_duration()
+
+class Customer
+    id
+    name
+    father_name
+    phone_number
+    email
+    address
+    adhaar
+    pan
+
+class Account
+    id
+    custmoer_id
+    account_number
+    account_type
+    branch_id
+    balance
+
+    create()
+    delete()
+    freeze()
+    modify()
+    read_details()
+
+class Transaction
+    id
+    datetime
+    type
+    account_id
+
+    check_balance()
+    deposit()
+    withdraw()
+    mini_stmt()
+    change_pin()
+    add_beneficiary()
+    transfer()
+
+Account* account = new Account(); // C++
+Account account = new Account(); // Java
+account = Account() // Python
+
+class NRIAccount : public Account {
+private:
+    string passportNumber;
+};
+
+class NRIAccount extends Account {
+    private String passportNumber;
+}
+
+class NRIAccount (Account):
+    def __init__(self):
+        passportNumber = ""
+
+names1 = []
+names2 = list()
+
+names3 = ['suresh', 'mahesh', 'girish']
+other_names = list(names3)
+
+
+list methods:
+    list()  # creating + initializing
+    append()
+    pop()
+    insert()
+    remove()
+    sort()
+    reverse()
+    extend()
+
+
+
+    
+    
+    Errors in python
+Syntax error when it is not in the format.
+Name error when it is not defined
+Index error when the list element  is out of range.
+Value error when we try to caste one value into another which is not possible for example file name can not be converted into the number so it is a value error.
+Learn output formating on sreing and floatinh poit number.
+Why in python we don't have increment and decrement.
+Type error range expected atleat 3 arguments but they have given 4 arguments 
+Zero division error occurs when the number can not be divided
+map is used to access every element one by one in a list 
+expansion : an instruction where it can not be exicuted in an expansion
+
+draw.igo
+
+
+
+Assignments:
+__main and __learn
+What Pythonic or pyp3
+What is pythonic (range functions python)
+Can we modify the list in a tuple 
+Wants to pass a command line arguments into my_range()
+Why and What argv stores the file name [0] and what is its purpose
+Why in python there is no implicit type casting example abb+55 is a type error we can concatenate only string to a string not to an integer
+
+Why there is no error in the case of Slicing 
+Impliment a function which mimics a find method of a string class 
+Accept a number from the user and find the next possible smallest number which is bigger than the given number having all the digits of the given number.
+
+ 
