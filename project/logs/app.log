@@ -1,0 +1,19 @@
+2025-09-02 21:32:42,945 - INFO - User alice logged in successfully.
+2025-09-02 21:32:42,946 - WARNING - Missing grades found and filled with 0.
+2025-09-02 21:32:42,946 - ERROR - Failed to load students.csv
+2025-09-02 21:32:42,977 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-02 21:32:42,977 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-02 21:32:42,978 - INFO -  * Restarting with stat
+2025-09-02 21:32:43,769 - INFO - User alice logged in successfully.
+2025-09-02 21:32:43,769 - WARNING - Missing grades found and filled with 0.
+2025-09-02 21:32:43,769 - ERROR - Failed to load students.csv
+2025-09-02 21:32:43,815 - WARNING -  * Debugger is active!
+2025-09-02 21:32:43,817 - INFO -  * Debugger PIN: 618-224-722
+2025-09-02 21:32:50,304 - INFO - 127.0.0.1 - - [02/Sep/2025 21:32:50] "[32mGET / HTTP/1.1[0m" 302 -
+2025-09-02 21:32:50,313 - INFO - 127.0.0.1 - - [02/Sep/2025 21:32:50] "GET /login HTTP/1.1" 200 -
+2025-09-02 21:32:50,399 - INFO - 127.0.0.1 - - [02/Sep/2025 21:32:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-02 21:32:55,020 - INFO - 127.0.0.1 - - [02/Sep/2025 21:32:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-02 21:32:55,042 - INFO - 127.0.0.1 - - [02/Sep/2025 21:32:55] "GET /dashboard HTTP/1.1" 200 -
+2025-09-02 21:33:08,572 - INFO - 127.0.0.1 - - [02/Sep/2025 21:33:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-02 21:33:08,612 - INFO - 127.0.0.1 - - [02/Sep/2025 21:33:08] "GET /dashboard HTTP/1.1" 200 -
